@@ -25,9 +25,9 @@
     def _deserialize(type, value)
       case type.to_sym
       when :DateTime
-        DateTime.parse(value)
+        ::DateTime.parse(value)
       when :Date
-        Date.parse(value)
+        ::Date.parse(value)
       when :String
         value.to_s
       when :Integer

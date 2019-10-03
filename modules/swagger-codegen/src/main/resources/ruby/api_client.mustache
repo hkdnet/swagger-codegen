@@ -185,10 +185,10 @@ module {{moduleName}}
         data == true
       when 'DateTime'
         # parse date time (expecting ISO 8601 format)
-        DateTime.parse data
+        ::DateTime.parse data
       when 'Date'
         # parse date time (expecting ISO 8601 format)
-        Date.parse data
+        ::Date.parse data
       when 'Object'
         # generic object (usually a Hash), return directly
         data
